@@ -95,6 +95,7 @@ resource "aws_vpc" "default" {
 
   tags {
     Name = "${var.network_name_prefix}-vpc"
+    Deployer = "CloudBrokerageStore"
   }
 }
 
@@ -103,6 +104,7 @@ resource "aws_internet_gateway" "default" {
 
   tags {
     Name = "${var.network_name_prefix}-gateway"
+    Deployer = "CloudBrokerageStore"
   }
 }
 
@@ -113,6 +115,7 @@ resource "aws_subnet" "primary" {
 
   tags {
     Name = "${var.network_name_prefix}-subnet"
+    Deployer = "CloudBrokerageStore"
   }
 }
 
@@ -123,6 +126,7 @@ resource "aws_subnet" "secondary" {
 
   tags {
     Name = "${var.network_name_prefix}-subnet2"
+    Deployer = "CloudBrokerageStore"
   }
 }
 
@@ -132,6 +136,7 @@ resource "aws_db_subnet_group" "default" {
 
   tags {
     Name = "${var.network_name_prefix}-db_subnet"
+    Deployer = "CloudBrokerageStore"
   }
 }
 
@@ -145,6 +150,7 @@ resource "aws_route_table" "default" {
 
   tags {
     Name = "${var.network_name_prefix}-route-table"
+    Deployer = "CloudBrokerageStore"
   }
 }
 
@@ -214,6 +220,7 @@ resource "aws_security_group" "application" {
 
   tags {
     Name = "${var.network_name_prefix}-security-group-application"
+    Deployer = "CloudBrokerageStore"
   }
 }
 
@@ -259,6 +266,7 @@ resource "aws_security_group" "database" {
 
   tags {
     Name = "${var.network_name_prefix}-security-group-database"
+    Deployer = "CloudBrokerageStore"
   }
 }
 
@@ -296,6 +304,7 @@ resource "aws_instance" "php_server" {
 
   tags {
     Name = "${var.php_instance_name}"
+    Deployer = "CloudBrokerageStore"
   }
 
   # Specify the ssh connection
