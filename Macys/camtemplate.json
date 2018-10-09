@@ -1,0 +1,14 @@
+{
+   "name": "Macys",
+   "description": "Description for Macys.",
+   "type": "userCreated",
+   "manifest": {
+     "template_type": "Terraform",
+     "template_format": "HCL",
+     "template_provider": "VMware vSphere"
+   },
+   "metadata": {
+     "displayName": "Macys",
+     "bullets": []
+   }
+ }
