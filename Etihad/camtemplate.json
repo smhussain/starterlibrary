@@ -1,0 +1,14 @@
+{
+   "name": "Etihad",
+   "description": "Description for Etihad.",
+   "type": "userCreated",
+   "manifest": {
+     "template_type": "Terraform",
+     "template_format": "HCL",
+     "template_provider": "Amazon EC2"
+   },
+   "metadata": {
+     "displayName": "Etihad",
+     "bullets": []
+   }
+ }
