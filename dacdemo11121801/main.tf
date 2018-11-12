@@ -29,6 +29,17 @@ resource "aws_instance" "dac_instance_11121801" {
   }
 }
 
+resource "aws_instance" "dac_instance_backup" {
+  ami = "${var.dac_instance_backup_ami}"
+  key_name = "${aws_key_pair.auth.id}"
+  instance_type = "${var.dac_instance_backup_aws_instance_type}"
+  availability_zone = "${var.availability_zone}"
+  subnet_id  = "${aws_subnet.subnet.id}"
+  tags {
+    Name = "${var.dac_instance_backup_name}"
+  }
+}
+
 resource "tls_private_key" "ssh" {
     algorithm = "RSA"
 }
@@ -44,5 +55,14 @@ resource "aws_subnet" "dacdemo" {
   availability_zone = "${var.availability_zone}"
   tags {
     Name = "Main"
+  }
+}
+
+resource "aws_subnet" "dacbackup" {
+  vpc_id = "${var.aws_network_dacdemo_vpc_id}"
+  cidr_block = "10.0.1.0/24"
+  availability_zone = "${var.availability_zone}"
+  tags {
+    Name = "backup"
   }
 }

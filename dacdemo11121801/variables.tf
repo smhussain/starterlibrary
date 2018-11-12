@@ -44,3 +44,18 @@ variable "aws_network_dacdemo_vpc_id" {
   description = "Generated"
 }
 
+variable "dac_instance_backup_ami" {
+  type = "string"
+  description = "Generated"
+}
+
+variable "dac_instance_backup_aws_instance_type" {
+  type = "string"
+  description = "Generated"
+}
+
+variable "dac_instance_backup_name" {
+  type = "string"
+  description = "Generated"
+}
+
