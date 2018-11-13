@@ -1,0 +1,14 @@
+{
+   "name": "mcmsdemo",
+   "description": "Description for mcmsdemo.",
+   "type": "userCreated",
+   "manifest": {
+     "template_type": "Terraform",
+     "template_format": "HCL",
+     "template_provider": "Other"
+   },
+   "metadata": {
+     "displayName": "mcmsdemo",
+     "bullets": []
+   }
+ }
