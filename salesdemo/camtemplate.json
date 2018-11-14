@@ -1,0 +1,14 @@
+{
+   "name": "salesdemo",
+   "description": "Description for salesdemo.",
+   "type": "userCreated",
+   "manifest": {
+     "template_type": "Terraform",
+     "template_format": "HCL",
+     "template_provider": "Other"
+   },
+   "metadata": {
+     "displayName": "salesdemo",
+     "bullets": []
+   }
+ }
