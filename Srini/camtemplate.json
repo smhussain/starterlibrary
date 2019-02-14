@@ -1,0 +1,14 @@
+{
+   "name": "Srini",
+   "description": "Description for Srini.",
+   "type": "userCreated",
+   "manifest": {
+     "template_type": "Terraform",
+     "template_format": "HCL",
+     "template_provider": "Other"
+   },
+   "metadata": {
+     "displayName": "Srini",
+     "bullets": []
+   }
+ }
