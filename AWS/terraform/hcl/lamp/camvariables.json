@@ -278,6 +278,7 @@
         "required": true,
         "secured": true,
         "type": "password",
+        "regex": "^[0-9A-Za-z]{8,16}$",
         "group_name": "virtualmachine"
     }
   ]
