@@ -1,0 +1,192 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Globals",
+      "label": "Globals"
+    },
+    {
+      "name": "Networking",
+      "label": "Networking"
+    },
+    {
+      "name": "Instances-aws_db_instance.MySQL",
+      "label": "Instances - aws_db_instance.MySQL"
+    },
+    {
+      "name": "Other",
+      "label": "Other"
+    },
+    {
+      "name": "Unused",
+      "label": "Unused"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "aws_region",
+      "label": "Aws Region",
+      "description": "Enter the AWS region",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Other",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "aws_vpc_name",
+      "label": "Aws Vpc Name",
+      "description": "Enter the Name of VPC",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Unused",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "aws_Security_Group_name",
+      "label": "Aws Security Group Name",
+      "description": "Enter the Security group Name",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Globals",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "aws_S3_bukcet_name",
+      "label": "Aws S 3 Bukcet Name",
+      "description": "Enter the S3 bucket Name",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Other",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "aws_key_pair_name",
+      "label": "Aws Key Pair Name",
+      "description": "Enter the key pair Name",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Other",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "mysql_user",
+      "label": "Mysql User",
+      "description": "Enter the mysql user name",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Instances-aws_db_instance.MySQL",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "mysql_password",
+      "label": "Mysql Password",
+      "description": "Enter the mysql password",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Instances-aws_db_instance.MySQL",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "mysql_database",
+      "label": "Mysql Database",
+      "description": "Enter the mysql database name",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Instances-aws_db_instance.MySQL",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "emr_subnet",
+      "label": "Emr Subnet",
+      "description": "Emr Subnet",
+      "type": "string",
+      "default": "EMR & MySQL subnet",
+      "validation": "",
+      "group_name": "Globals",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "emr_subnet1",
+      "label": "Emr Subnet 1",
+      "description": "Emr Subnet 1",
+      "type": "string",
+      "default": "MySQL subnet 1",
+      "validation": "",
+      "group_name": "Networking",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [
+    {
+      "name": "private_key",
+      "label": "Private Key",
+      "description": "Private Key",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "mySQLendpoint",
+      "label": "My Sqlendpoint",
+      "description": "My Sqlendpoint",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    }
+  ]
+}
